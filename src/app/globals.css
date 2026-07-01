@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --orbit-bg: #F7F3EC;
+    --orbit-surface: #FFFDF7;
+    --orbit-ink: #111111;
+    --orbit-muted: #6B645D;
+    --orbit-border: #111111;
+
+    --orbit-orange: #F97316;
+    --orbit-yellow: #FACC15;
+    --orbit-olive: #8A9A5B;
+    --orbit-sky: #7DD3FC;
+    --orbit-red: #EF4444;
+    --orbit-green: #22C55E;
+
+    --orbit-radius-sm: 10px;
+    --orbit-radius-md: 16px;
+    --orbit-radius-lg: 20px;
+    --orbit-radius-xl: 28px;
+
+    --orbit-border-width: 2px;
+
+    --orbit-shadow-sm: 4px 4px 0 #111111;
+    --orbit-shadow-md: 6px 6px 0 #111111;
+    --orbit-shadow-lg: 10px 10px 0 #111111;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--orbit-bg);
+    color: var(--orbit-ink);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .text-hero {
+    font-weight: 800;
+    font-size: clamp(2.5rem, 8vw, 6rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    font-family: "Cabinet Grotesk", "General Sans", system-ui, -apple-system, sans-serif;
+  }
+
+  .text-section-title {
+    font-weight: 700;
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    font-family: "Cabinet Grotesk", "General Sans", system-ui, -apple-system, sans-serif;
+  }
+
+  .text-body {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: "Geist", "Inter", system-ui, -apple-system, sans-serif;
+  }
+
+  .text-caption {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--orbit-muted);
+    font-family: "Geist", "Inter", system-ui, -apple-system, sans-serif;
+  }
+
+  .text-label {
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: "Geist", "Inter", system-ui, -apple-system, sans-serif;
+  }
+}
