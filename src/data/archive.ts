@@ -38,7 +38,7 @@ export const archiveEntries: ArchiveItem[] = [
     type: "mobile",
     year: "2026",
     role: "Product Designer",
-    stack: ["Flutter", "Figma"],
+    stack: ["Flutter", "Dart", "Figma"],
     tags: ["Mobile", "Product Flow", "UI Design"],
   },
 ];

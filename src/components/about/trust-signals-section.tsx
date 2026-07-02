@@ -4,7 +4,7 @@ const trustSignals = [
   {
     title: "Product ecosystem experience",
     description:
-      "Skyhook evolved from a website into a broader coffee business product ecosystem with reservation, dashboard, POS direction, and mobile app progress.",
+      "Skyhook evolved from a website into a broader coffee business product ecosystem with reservation, dashboard, POS direction, and Flutter mobile app progress.",
   },
   {
     title: "Research-backed product logic",
@@ -27,7 +27,7 @@ export function TrustSignalsSection() {
   return (
     <section className="py-16 md:py-24">
       <div className="space-y-2">
-        <p className="text-label text-orbit-muted">EVIDENCE</p>
+        <p className="text-label">EVIDENCE</p>
         <h2 className="text-section-title">
           Built on real product work, not claims.
         </h2>
@@ -36,7 +36,7 @@ export function TrustSignalsSection() {
         {trustSignals.map((item) => (
           <Card key={item.title} variant="accent">
             <h3 className="font-heading text-xl font-bold">{item.title}</h3>
-            <p className="text-body mt-3 text-orbit-muted">
+            <p className="text-body mt-3">
               {item.description}
             </p>
           </Card>

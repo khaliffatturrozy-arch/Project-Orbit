@@ -4,11 +4,14 @@ import { Badge } from "@/components/ui/badge";
 export function StatusWidget() {
   return (
     <Card variant="accent" className="space-y-4">
-      <p className="text-label text-orbit-muted">Building Status</p>
+      <p className="text-label">Building Status</p>
       <div className="space-y-2">
         <div className="flex items-center justify-between">
           <span className="text-body font-medium">Currently Building</span>
-          <span className="text-body font-semibold">Skyhook Mobile</span>
+          <div className="flex items-center gap-2">
+            <Badge variant="neutral">Flutter</Badge>
+            <span className="text-body font-semibold">Skyhook Mobile</span>
+          </div>
         </div>
         <div className="flex items-center justify-between">
           <span className="text-body font-medium">Progress</span>

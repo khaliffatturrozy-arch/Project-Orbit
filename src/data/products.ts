@@ -21,18 +21,18 @@ export const products: Product[] = [
       "Mobile App",
       "Deployment",
     ],
-    stack: ["Next.js", "React", "Tailwind CSS", "Supabase", "Vercel"],
+    stack: ["Next.js", "React", "Tailwind CSS", "Supabase", "Flutter", "Vercel"],
     links: {
       live: "https://skyhookcoffee.vercel.app/",
       caseStudy: "/products/skyhook",
     },
     featured: true,
     overview:
-      "Skyhook is a growing coffee business product ecosystem that started from a public-facing website and evolved into a broader platform covering reservation, admin workflows, POS direction, and an in-progress mobile app.",
+      "Skyhook is a growing coffee business product ecosystem that started from a public-facing website and evolved into a broader platform covering reservation, admin workflows, POS direction, and an in-progress Flutter mobile app, currently around 75% complete.",
     problem:
       "A coffee business needs more than a beautiful landing page. It needs a clear digital experience for customers, operational tools for internal teams, and a scalable foundation for future product expansion.",
     solution:
-      "I approached Skyhook as a product ecosystem: public website for discovery, reservation flow for customer action, dashboard direction for operations, POS direction for transactions, and mobile app development for a stronger customer experience.",
+      "I approached Skyhook as a product ecosystem: public website for discovery, reservation flow for customer action, dashboard direction for operations, POS direction for transactions, and Flutter mobile app development for a stronger customer-facing experience.",
     impact:
       "Skyhook became a proof of iterative product development: a project that keeps evolving from web presence into a connected digital platform.",
     myRole: [
@@ -60,7 +60,7 @@ export const products: Product[] = [
       { label: "Reservation Flow", description: "Converts visitors into booking actions" },
       { label: "Admin Dashboard", description: "Internal operational control direction" },
       { label: "POS Direction", description: "Transaction and cashier workflow direction" },
-      { label: "Mobile App", description: "In-progress customer-facing mobile experience" },
+      { label: "Mobile App", description: "In-progress Flutter-based customer-facing mobile experience" },
       { label: "Backend/Data Layer", description: "Product data, user flow, and future operational integration" },
     ],
     decisions: [
@@ -97,12 +97,12 @@ export const products: Product[] = [
       { title: "Reservation experience", status: "done", description: "Booking flow for customer table reservations." },
       { title: "Admin dashboard direction", status: "done", description: "Internal dashboard structure and planning." },
       { title: "POS direction", status: "in-progress", description: "Transaction and cashier interface direction." },
-      { title: "Mobile app", status: "in-progress", description: "Customer-facing mobile experience in development." },
+      { title: "Flutter mobile app", status: "in-progress", description: "Customer-facing mobile experience in development." },
       { title: "Deeper analytics", status: "planned", description: "Business insights and operational metrics." },
       { title: "Customer membership experience", status: "planned", description: "Loyalty and membership program." },
     ],
     reflection:
-      "Skyhook is the clearest example of how I approach digital products: start from a real need, ship a usable version, then keep evolving the product ecosystem as the business direction becomes clearer.",
+      "Skyhook is the clearest example of how I approach digital products: start from a real need, ship a usable version, then keep evolving the product ecosystem — from web to dashboard, POS direction, and Flutter mobile development — as the business direction becomes clearer.",
   },
   {
     id: "sleepwise",

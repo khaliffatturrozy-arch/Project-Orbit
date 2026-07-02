@@ -23,7 +23,7 @@ export function HeroSection() {
             <br />
             EVOLVE.
           </h1>
-          <p className="text-body max-w-xl text-orbit-muted">
+          <p className="text-body max-w-xl">
             I turn messy ideas into reliable digital products through design,
             engineering, and continuous iteration.
           </p>
@@ -51,7 +51,7 @@ export function HeroSection() {
                 href={profile.socialLinks.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-caption font-medium underline-offset-2 hover:underline"
+                className="inline-flex items-center min-h-[48px] px-3 py-2 text-caption font-medium underline-offset-2 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orbit-border focus-visible:ring-offset-2 focus-visible:ring-offset-orbit-bg rounded-sm"
               >
                 GitHub &rarr;
               </Link>
@@ -63,11 +63,14 @@ export function HeroSection() {
           <Card className="w-full max-w-sm space-y-5">
             <div className="flex items-center gap-2">
               <span className="inline-block h-2 w-2 rounded-full bg-orbit-orange" aria-hidden="true" />
-              <span className="text-label text-orbit-muted">LIVE STATUS</span>
+              <span className="text-label">LIVE STATUS</span>
             </div>
             <div className="space-y-1.5">
               <p className="text-caption">Currently Building</p>
-              <p className="font-heading text-2xl font-bold">Skyhook Mobile</p>
+              <div className="flex items-center gap-2">
+                <p className="font-heading text-2xl font-bold">Skyhook Mobile</p>
+                <Badge variant="neutral">Flutter</Badge>
+              </div>
             </div>
             <div className="space-y-1.5">
               <div className="flex items-center justify-between">

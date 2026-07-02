@@ -46,6 +46,17 @@ export const labEntries: LabEntry[] = [
     featured: false,
   },
   {
+    id: "skyhook-mobile",
+    slug: "skyhook-mobile",
+    title: "Skyhook Mobile",
+    description: "An in-progress Flutter mobile app direction connected to the Skyhook coffee product ecosystem.",
+    category: "ui",
+    status: "prototype",
+    stack: ["Flutter", "Dart", "Figma"],
+    tags: ["Mobile App", "Flutter", "Product Ecosystem"],
+    featured: true,
+  },
+  {
     id: "orbit-ui-system",
     slug: "orbit-ui-system",
     title: "ORBIT UI System",

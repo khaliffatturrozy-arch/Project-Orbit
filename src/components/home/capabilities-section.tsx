@@ -12,8 +12,8 @@ const capabilityGroups = [
     items: ["interface design", "design system", "responsive layout", "interaction design"],
   },
   {
-    title: "Web Development",
-    items: ["landing page", "dashboard", "authentication", "product frontend"],
+    title: "Web & Mobile Development",
+    items: ["landing page", "dashboard", "authentication", "product frontend", "Flutter", "Dart"],
   },
   {
     title: "Backend & Database",
