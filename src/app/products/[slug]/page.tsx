@@ -7,7 +7,7 @@ import { ProductFeatureList } from "@/components/products/product-feature-list";
 import { ProductArchitecture } from "@/components/products/product-architecture";
 import { ProductDecisions } from "@/components/products/product-decisions";
 import { ProductRoadmap } from "@/components/products/product-roadmap";
-import { ProductReflection } from "@/components/products/product-reflection";
+import { ProductReflection, ProductEngineeringPrinciples, ProductFuturePlans, ProductTimeline, ProductCapabilitesGrid, ProductArchitectureDiagrams, ProductMetricCards, ProductTechStack } from "@/components/products/product-reflection";
 import { ProductNavigation } from "@/components/products/product-navigation";
 import { products } from "@/data/products";
 
@@ -56,16 +56,44 @@ export default async function ProductPage({
     notFound();
   }
 
+  const isCozyAI = slug === "cozzy-ai";
+
   return (
     <Container>
       <article className="py-8 md:py-12">
         <ProductHero product={product} />
 
         <div className="mt-12 space-y-16 md:mt-16">
+          {isCozyAI && (
+            <ProductMetricCards
+              metrics={isCozyAI ? product.developmentStatus?.metrics : []}
+            />
+          )}
+
+          {isCozyAI && (
+            <ProductArchitectureDiagrams
+              architecture={isCozyAI ? product.architecture : []}
+            />
+          )}
+
+          {isCozyAI && (
+            <ProductCapabilitesGrid
+              capabilities={isCozyAI ? product.features : []}
+            />
+          )}
+
+          {isCozyAI && (
+            <ProductEngineeringPrinciples
+              engineeringPrinciples={isCozyAI ? product.engineeringPrinciples : []}
+            />
+          )}
+
           <ProductOverview product={product} />
 
           {product.features && product.features.length > 0 && (
-            <ProductFeatureList features={product.features} />
+            !isCozyAI && (
+              <ProductFeatureList features={product.features} />
+            )
           )}
 
           {product.architecture && product.architecture.length > 0 && (
@@ -76,8 +104,18 @@ export default async function ProductPage({
             <ProductDecisions decisions={product.decisions} />
           )}
 
+          {isCozyAI && (
+            <ProductTimeline roadmap={product.roadmap || []} />
+          )}
+
+          {isCozyAI && (
+            <ProductFuturePlans futurePlans={isCozyAI ? product.futurePlans : []} />
+          )}
+
           {product.roadmap && product.roadmap.length > 0 && (
-            <ProductRoadmap roadmap={product.roadmap} />
+            !isCozyAI && (
+              <ProductRoadmap roadmap={product.roadmap} />
+            )
           )}
 
           {product.reflection && (

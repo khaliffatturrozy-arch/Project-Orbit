@@ -15,14 +15,23 @@ type ProductHeroProps = {
 };
 
 export function ProductHero({ product }: ProductHeroProps) {
+  const isCoozyAI = product.slug === "cozzy-ai";
+
   return (
     <section className="border-b-2 border-orbit-border pb-12 pt-8 md:pb-16 md:pt-12">
       <div className="space-y-6">
         <div className="flex flex-wrap items-start justify-between gap-4">
           <div className="space-y-2">
-            <p className="text-label text-orbit-muted">CASE STUDY</p>
+            <div className="flex items-center gap-3">
+              <p className="text-label">ENTERPRISE PLATFORM</p>
+              {isCoozyAI && (
+                <Badge variant="orange" className="text-xs font-bold">
+                  FEATURED
+                </Badge>
+              )}
+            </div>
             <h1 className="text-hero">{product.title}</h1>
-            <p className="text-section-title text-orbit-muted">{product.subtitle}</p>
+            <p className="text-section-title">{product.subtitle}</p>
           </div>
           <Badge variant={statusVariant[product.status]}>{product.status}</Badge>
         </div>
@@ -32,7 +41,7 @@ export function ProductHero({ product }: ProductHeroProps) {
         {product.progress !== undefined && (
           <div className="max-w-md space-y-1.5">
             <div className="flex items-center justify-between text-caption">
-              <span>Progress</span>
+              <span>Development Progress</span>
               <span className="font-semibold">{product.progress}%</span>
             </div>
             <div
@@ -48,24 +57,44 @@ export function ProductHero({ product }: ProductHeroProps) {
                 style={{ width: `${product.progress}%` }}
               />
             </div>
+            {isCoozyAI && (
+              <div className="text-caption text-orbit-muted">
+                Status: {product.developmentStatus?.stage}
+              </div>
+            )}
           </div>
         )}
 
         <div className="flex flex-wrap gap-x-6 gap-y-1 text-caption">
           <p><span className="font-semibold text-orbit-ink">Industry:</span> {product.industry}</p>
           <p><span className="font-semibold text-orbit-ink">Role:</span> {product.role}</p>
+          {isCoozyAI && (
+            <p className="ml-auto">
+              <span className="font-semibold text-orbit-orange">Enterprise AI Platform</span>
+            </p>
+          )}
         </div>
 
         <div className="flex flex-wrap gap-1.5">
-          {product.services.map((service) => (
+          {product.services.slice(0, isCoozyAI ? 8 : product.services.length).map((service) => (
             <Badge key={service} variant="neutral">{service}</Badge>
           ))}
+          {isCoozyAI && (
+            <Badge variant="orange" className="text-xs">
+              Engineering Intelligence
+            </Badge>
+          )}
         </div>
 
         <div className="flex flex-wrap gap-1.5">
-          {product.stack.map((tech) => (
+          {(product.stack || []).slice(0, isCoozyAI ? 8 : product.stack.length).map((tech) => (
             <Badge key={tech} variant="neutral">{tech}</Badge>
           ))}
+          {isCoozyAI && (
+            <Badge variant="orange" className="text-xs">
+              Enterprise Ready
+            </Badge>
+          )}
         </div>
 
         <div className="grid gap-6 md:grid-cols-3 md:gap-8">
@@ -73,7 +102,7 @@ export function ProductHero({ product }: ProductHeroProps) {
             <ProjectVisual
               title={product.title}
               subtitle={product.subtitle}
-              typeLabel="CASE STUDY"
+              typeLabel="ENTERPRISE PLATFORM"
               status={product.status}
               progress={product.progress}
             />
@@ -81,16 +110,6 @@ export function ProductHero({ product }: ProductHeroProps) {
           <div className="flex flex-col justify-end gap-3">
             {product.links && (product.links.live || product.links.github) && (
               <div className="flex flex-wrap gap-3">
-                {product.links.live && (
-                  <Link
-                    href={product.links.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-orbit-sm border-2 border-orbit-border bg-orbit-ink px-5 py-2.5 text-label font-semibold text-orbit-surface shadow-orbit-sm transition-all hover:shadow-orbit-md hover:-translate-y-0.5"
-                  >
-                    Live Site &rarr;
-                  </Link>
-                )}
                 {product.links.github && (
                   <Link
                     href={product.links.github}
@@ -101,10 +120,25 @@ export function ProductHero({ product }: ProductHeroProps) {
                     Source Code &rarr;
                   </Link>
                 )}
+                {isCoozyAI && (
+                  <div className="inline-flex items-center gap-2 rounded-orbit-sm border-2 border-orbit-orange/30 bg-orbit-orange/5 px-5 py-2.5 text-label font-semibold text-orbit-orange">
+                    Platform In Development
+                  </div>
+                )}
               </div>
             )}
           </div>
         </div>
+
+        {isCoozyAI && product.badges && (
+          <div className="flex flex-wrap gap-2">
+            {product.badges.map((badge) => (
+              <Badge key={badge} variant="orange" className="text-xs">
+                {badge}
+              </Badge>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );

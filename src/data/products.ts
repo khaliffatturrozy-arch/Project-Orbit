@@ -2,6 +2,159 @@ import type { Product } from "@/types/orbit";
 
 export const products: Product[] = [
   {
+    id: "cozzy-ai",
+    slug: "cozzy-ai",
+    title: "COZZY AI",
+    subtitle: "The Engineering Intelligence Platform for Modern Enterprises.",
+    description:
+      "COZZY AI is an enterprise-grade AI platform engineered to transform how businesses design, build, operate, secure, and optimize digital products and industrial systems.",
+    status: "in-progress",
+    progress: 10,
+    industry: "Enterprise Software",
+    role: "Product Engineer",
+    services: [
+      "AI Engineering",
+      "Platform Architecture",
+      "Product Strategy",
+      "UX/UI Design",
+      "Frontend Development",
+      "Backend Development",
+      "Enterprise Infrastructure",
+      "Automation",
+      "Knowledge Engineering",
+      "Security Architecture",
+    ],
+    stack: [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Node.js",
+      "Python",
+      "AI Agents",
+      "LLMs",
+      "RAG",
+      "Vector Database",
+      "Knowledge Graph",
+      "Docker",
+      "Cloud Infrastructure",
+      "REST API",
+      "WebSocket",
+      "GitHub",
+      "Enterprise Design System",
+    ],
+    links: {
+      caseStudy: "/products/cozzy-ai",
+    },
+    featured: true,
+    overview:
+      "COZZY AI is an enterprise-grade AI platform engineered to transform how businesses design, build, operate, secure, and optimize digital products and industrial systems. Unlike generic AI assistants, COZZY AI is designed as an Engineering Intelligence Platform that understands software engineering workflows, product development, enterprise operations, UX/UI systems, infrastructure, automation, and business decision making.",
+    problem:
+      "Modern companies waste enormous resources because information is fragmented across teams. Developers lose time searching documentation. Designers recreate existing components. Managers struggle tracking execution. Engineers manually repeat workflows. Knowledge becomes siloed. Decision making is inconsistent. Security reviews are slow. Documentation quickly becomes outdated. AI tools today mostly generate text. Very few actually understand the entire engineering lifecycle.",
+    solution:
+      "COZZY AI changes this by engineering an AI Operating System that becomes the central intelligence layer of modern companies. Connecting people, projects, knowledge, documents, codebases, design systems, architecture, operations, business workflows, and automation to amplify every team instead of replacing them.",
+    impact:
+      "COZZY AI helps organizations build better products faster with lower operational cost while improving quality, consistency, and security through centralized engineering intelligence and enterprise-scale automation.",
+    myRole: [
+      "Platform architecture design",
+      "Engineering systems design",
+      "AI integration architecture",
+      "Enterprise UX design",
+      "Component development",
+      "Backend systems",
+      "Infrastructure automation",
+      "Performance optimization",
+      "Knowledge graph implementation",
+    ],
+    features: [
+      { title: "Engineering Intelligence", description: "Architecture understanding, dependency analysis, technical documentation generation" },
+      { title: "Knowledge Intelligence", description: "Semantic knowledge search, organization memory, context retrieval, knowledge graph" },
+      { title: "Design Intelligence", description: "UI analysis, design system generation, component recommendations, accessibility review" },
+      { title: "Development Intelligence", description: "AI pair programming, requirement analysis, architecture planning, API generation, code review" },
+      { title: "Business Intelligence", description: "Meeting summarization, requirement extraction, project tracking, workflow optimization" },
+      { title: "Security Intelligence", description: "Secure coding recommendations, architecture risk analysis, permission review, threat modeling assistance" },
+      { title: "Enterprise Automation", description: "Workflow automation, task orchestration, knowledge synchronization, cross-system integration" },
+    ],
+    architecture: [
+      { label: "AI Operating System", description: "Central intelligence layer for all engineering workflows" },
+      { label: "Engineering Intelligence", description: "Architecture analysis, code understanding, dependency mapping" },
+      { label: "Knowledge Graph", description: "Connected knowledge base across all projects and documents" },
+      { label: "Enterprise Workspace", description: "Centralized development and collaboration environment" },
+      { label: "Automation Layer", description: "Workflow orchestration and system integration" },
+      { label: "Security Infrastructure", description: "Enterprise-grade security and compliance framework" },
+    ],
+    decisions: [
+      {
+        title: "Enterprise AI Operating System Design",
+        context:
+          "Needed a platform that goes beyond simple chatbots to understand complex engineering workflows.",
+        decision:
+          "Designed as an AI Operating System that connects all aspects of engineering teams' work instead of replacing humans.",
+        tradeoff:
+          "Requires more sophisticated architecture but delivers true enterprise-scale transformation.",
+      },
+      {
+        title: "Knowledge-First Approach",
+        context:
+          "Engineering teams waste time searching for and rediscovering information.",
+        decision:
+          "Built a semantic knowledge graph that connects projects, documentation, and team knowledge.",
+        tradeoff:
+          "Requires upfront knowledge modeling but prevents information silos.",
+      },
+      {
+        title: "Connected Intelligence Architecture",
+        context:
+          "Engineering intelligence needs context from multiple sources to be truly useful.",
+        decision:
+          "Designed interconnected intelligence modules that work together across the entire development lifecycle.",
+        tradeoff:
+          "More complex integration but provides cohesive platform experience.",
+      },
+    ],
+    roadmap: [
+      { title: "Engineering Foundation", status: "done", description: "Architecture & engineering foundation complete" },
+      { title: "Core AI Platform", status: "in-progress", description: "Building AI intelligence layers for engineering" },
+      { title: "Enterprise Workspace", status: "planned", description: "Central workspace for engineering teams" },
+      { title: "Automation Platform", status: "planned", description: "Enterprise-level workflow automation" },
+      { title: "Marketplace & Integrations", status: "planned", description: "Third-party integration ecosystem" },
+      { title: "AI Operating System", status: "planned", description: "Full AI OS for engineering organizations" },
+    ],
+    reflection:
+      "COZZY AI represents a fundamental shift from AI assistants to AI operating systems. It requires designing not just intelligent features, but intelligent platforms that amplify human engineers while solving enterprise-scale information fragmentation and workflow inefficiencies.",
+    engineeringPrinciples: [
+      "Build as an AI Operating System, not just AI features",
+      "Knowledge-first architecture with semantic connections",
+      "Enterprise-grade security and compliance by design",
+      "Platform strategy over feature shipping",
+      "Developer experience for all team types",
+    ],
+    futurePlans: [
+      "Enterprise Workspace for engineering teams",
+      "Automation platform for development workflows",
+      "Marketplace and integration ecosystem",
+      "Full AI Operating System architecture",
+      "Advanced predictive engineering intelligence",
+      "Enterprise knowledge graph deployment",
+    ],
+    developmentStage: "Architecture & Engineering Foundation",
+    developmentMetrics: [
+      { label: "Engineering Foundation", value: "100%", status: "complete" },
+      { label: "Architecture", value: "100%", status: "complete" },
+      { label: "Core Platform", value: "10%", status: "in-progress" },
+      { label: "Enterprise Ready", value: "10%", status: "foundation" },
+      { label: "Foundation Complete", value: "10%", status: "complete" },
+    ],
+    badges: [
+      "Enterprise AI",
+      "Engineering Platform",
+      "Automation",
+      "Knowledge Intelligence",
+      "AI Workspace",
+      "Enterprise Security",
+      "Developer Tools",
+    ],
+  },
+  {
     id: "skyhook",
     slug: "skyhook",
     title: "Skyhook",
@@ -207,7 +360,7 @@ export const products: Product[] = [
       "SleepWise taught me that product quality is not only about interface design. The logic behind the result, the explanation, and the user's trust in the system matter just as much.",
   },
   {
-    id: "orbit",
+    id: "project-orbit",
     slug: "project-orbit",
     title: "Project ORBIT",
     subtitle: "Living Product Portfolio",
@@ -305,4 +458,81 @@ export const products: Product[] = [
     reflection:
       "ORBIT is designed as proof of how I think: build with structure, explain decisions, and keep improving the product over time.",
   },
+];
+
+export const developmentStages = [
+  {
+    id: "architecture",
+    title: "Engineering Foundation",
+    status: "complete",
+    progress: 100,
+    icon: "🏗️",
+  },
+  {
+    id: "platform",
+    title: "Core AI Platform",
+    status: "in-progress",
+    progress: 10,
+    icon: "🤖",
+  },
+  {
+    id: "workspace",
+    title: "Enterprise Workspace",
+    status: "planned",
+    progress: 0,
+    icon: "💼",
+  },
+  {
+    id: "automation",
+    title: "Automation Platform",
+    status: "planned",
+    progress: 0,
+    icon: "⚡",
+  },
+];
+
+export const enterpriseBadges = [
+  "Enterprise AI",
+  "Engineering Platform",
+  "Automation",
+  "Knowledge Intelligence",
+  "AI Workspace",
+  "Enterprise Security",
+  "Developer Tools",
+];
+
+export const engineeringPrinciples = [
+  "Build as an AI Operating System, not just AI features",
+  "Knowledge-first architecture with semantic connections",
+  "Enterprise-grade security and compliance by design",
+  "Platform strategy over feature shipping",
+  "Developer experience for all team types",
+];
+
+export const futurePlans = [
+  "Enterprise Workspace for engineering teams",
+  "Automation platform for development workflows",
+  "Marketplace and integration ecosystem",
+  "Full AI Operating System architecture",
+  "Advanced predictive engineering intelligence",
+  "Enterprise knowledge graph deployment",
+];
+
+export const techStack = [
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Node.js",
+  "Python",
+  "AI Agents",
+  "LLMs",
+  "RAG",
+  "Vector Database",
+  "Knowledge Graph",
+  "Docker",
+  "Cloud Infrastructure",
+  "REST API",
+  "WebSocket",
+  "GitHub",
+  "Enterprise Design System",
 ];

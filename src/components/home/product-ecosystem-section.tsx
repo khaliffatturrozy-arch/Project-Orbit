@@ -14,8 +14,9 @@ const statusVariant: Record<string, "success" | "orange" | "sky" | "neutral"> = 
 };
 
 const featuredProducts = products.filter((p) => p.featured);
+const cozyAI = featuredProducts.find((p) => p.id === "cozzy-ai");
 const skyhook = featuredProducts.find((p) => p.id === "skyhook");
-const others = featuredProducts.filter((p) => p.id !== "skyhook");
+const others = featuredProducts.filter((p) => p.id !== "cozzy-ai" && p.id !== "skyhook");
 
 function FeaturedProductCard({ product }: { product: Product }) {
   return (
@@ -41,7 +42,7 @@ function FeaturedProductCard({ product }: { product: Product }) {
           {product.links?.caseStudy && (
             <Link
               href={product.links.caseStudy}
-              className="text-label inline-flex items-center gap-1 font-semibold text-orbit-orange underline-offset-2 hover:underline"
+              className="inline-flex items-center min-h-[48px] px-3 py-2 text-label font-semibold text-orbit-ink underline-offset-2 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orbit-border focus-visible:ring-offset-2 focus-visible:ring-offset-orbit-bg rounded-sm"
             >
               View Case Study &rarr;
             </Link>
@@ -51,7 +52,7 @@ function FeaturedProductCard({ product }: { product: Product }) {
               href={product.links.live}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-label inline-flex items-center gap-1 font-semibold underline-offset-2 hover:underline"
+              className="inline-flex items-center min-h-[48px] px-3 py-2 text-label font-semibold underline-offset-2 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orbit-border focus-visible:ring-offset-2 focus-visible:ring-offset-orbit-bg rounded-sm"
             >
               Live Site &rarr;
             </Link>
@@ -104,6 +105,7 @@ export function ProductEcosystemSection() {
       description="A focused collection of digital products across web, AI, dashboards, automation, and mobile experiences."
     >
       <div className="space-y-8">
+        {cozyAI && <FeaturedProductCard product={cozyAI} />}
         {skyhook && <FeaturedProductCard product={skyhook} />}
 
         <div className="grid gap-6 sm:grid-cols-2">
@@ -115,7 +117,7 @@ export function ProductEcosystemSection() {
         <div className="pt-4">
           <Link
             href="/#contact"
-            className="text-body font-semibold underline-offset-2 hover:underline"
+            className="inline-flex items-center min-h-[48px] px-3 py-2 text-body font-semibold underline-offset-2 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orbit-border focus-visible:ring-offset-2 focus-visible:ring-offset-orbit-bg rounded-sm"
           >
             Have a product idea? Let&apos;s talk &rarr;
           </Link>
