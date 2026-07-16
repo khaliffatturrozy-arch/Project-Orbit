@@ -1,8 +1,21 @@
 import type { Metadata } from "next";
+import { Inter, Geist } from "next/font/google";
 import { AppShell } from "@/components/layout/app-shell";
 import "./globals.css";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+
+const fontHeading = Inter({
+  subsets: ["latin"],
+  variable: "--font-heading",
+  display: "swap",
+});
+
+const fontBody = Geist({
+  subsets: ["latin"],
+  variable: "--font-body",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -35,7 +48,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${fontHeading.variable} ${fontBody.variable}`}>
       <body>
         <AppShell>{children}</AppShell>
       </body>

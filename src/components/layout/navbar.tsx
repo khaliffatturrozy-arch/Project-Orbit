@@ -29,13 +29,13 @@ export function Navbar() {
         <div className="flex items-center justify-between">
           <Link
             href="/"
-            className="font-heading text-lg font-bold tracking-tight"
+            className="inline-flex items-center min-h-[48px] font-heading text-lg font-bold tracking-tight focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orbit-border focus-visible:ring-offset-2 focus-visible:ring-offset-orbit-bg rounded-sm"
           >
             Project ORBIT
           </Link>
 
           <button
-            className="flex flex-col gap-1.5 md:hidden"
+            className="flex min-h-[48px] w-[48px] flex-col items-center justify-center gap-1.5 md:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orbit-border focus-visible:ring-offset-2 focus-visible:ring-offset-orbit-bg rounded-sm"
             onClick={() => setOpen(!open)}
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
@@ -69,7 +69,7 @@ export function Navbar() {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-body font-medium transition-colors hover:text-orbit-muted"
+                    className="inline-flex items-center min-h-[48px] px-3 py-2 text-body font-medium underline-offset-2 transition-colors hover:text-orbit-muted hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orbit-border focus-visible:ring-offset-2 focus-visible:ring-offset-orbit-bg rounded-sm"
                   >
                     {link.label}
                   </Link>
@@ -88,7 +88,7 @@ export function Navbar() {
                       ? "noopener noreferrer"
                       : undefined
                   }
-                  className="text-label font-semibold transition-colors hover:text-orbit-muted"
+                  className="inline-flex items-center min-h-[48px] px-3 py-2 text-label font-semibold underline-offset-2 transition-colors hover:text-orbit-muted hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orbit-border focus-visible:ring-offset-2 focus-visible:ring-offset-orbit-bg rounded-sm"
                 >
                   {link.label}
                 </Link>
@@ -102,12 +102,12 @@ export function Navbar() {
             id="mobile-menu"
             className="border-t-2 border-orbit-border bg-orbit-bg px-0 pb-4 pt-3 md:hidden"
           >
-            <ul className="flex flex-col gap-3">
+            <ul className="flex flex-col">
               {navLinks.map((link) => (
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-body font-medium"
+                    className="flex w-full min-h-[48px] items-center px-4 py-3 text-body font-medium underline-offset-2 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orbit-border focus-visible:ring-offset-2 focus-visible:ring-offset-orbit-bg rounded-sm"
                     onClick={() => setOpen(false)}
                   >
                     {link.label}
@@ -118,7 +118,13 @@ export function Navbar() {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-body font-medium"
+                    target={link.href.startsWith("http") ? "_blank" : undefined}
+                    rel={
+                      link.href.startsWith("http")
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
+                    className="flex w-full min-h-[48px] items-center px-4 py-3 text-body font-medium underline-offset-2 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orbit-border focus-visible:ring-offset-2 focus-visible:ring-offset-orbit-bg rounded-sm"
                     onClick={() => setOpen(false)}
                   >
                     {link.label}

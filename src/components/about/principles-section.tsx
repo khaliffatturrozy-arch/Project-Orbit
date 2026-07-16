@@ -32,7 +32,7 @@ export function PrinciplesSection() {
   return (
     <section className="py-16 md:py-24">
       <div className="space-y-2">
-        <p className="text-label text-orbit-muted">PRINCIPLES</p>
+        <p className="text-label">PRINCIPLES</p>
         <h2 className="text-section-title">
           Principles that guide the way I build.
         </h2>

@@ -8,7 +8,7 @@ type ProductDecisionsProps = {
 export function ProductDecisions({ decisions }: ProductDecisionsProps) {
   return (
     <section>
-      <p className="text-label mb-6 text-orbit-muted">ENGINEERING DECISIONS</p>
+      <h2 className="text-label mb-6">ENGINEERING DECISIONS</h2>
       <div className="space-y-4">
         {decisions.map((decision) => (
           <Card key={decision.title} variant="default">
@@ -17,11 +17,11 @@ export function ProductDecisions({ decisions }: ProductDecisionsProps) {
 
               <div className="grid gap-4 md:grid-cols-2">
                 <div className="space-y-1">
-                  <p className="text-label font-semibold text-orbit-muted">Context</p>
+                  <p className="text-label font-semibold">Context</p>
                   <p className="text-body">{decision.context}</p>
                 </div>
                 <div className="space-y-1">
-                  <p className="text-label font-semibold text-orbit-orange">Decision</p>
+                  <p className="text-label font-semibold text-orbit-ink">Decision</p>
                   <p className="text-body">{decision.decision}</p>
                 </div>
               </div>

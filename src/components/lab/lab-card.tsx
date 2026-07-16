@@ -47,7 +47,7 @@ export function LabCard({ entry, variant = "compact" }: LabCardProps) {
       {entry.tags && entry.tags.length > 0 && (
         <div className="flex flex-wrap gap-1">
           {entry.tags.map((t) => (
-            <span key={t} className="text-label text-orbit-muted">{t}</span>
+            <span key={t} className="text-label">{t}</span>
           ))}
         </div>
       )}

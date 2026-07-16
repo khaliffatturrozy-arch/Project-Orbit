@@ -7,7 +7,7 @@
     --orbit-bg: #F7F3EC;
     --orbit-surface: #FFFDF7;
     --orbit-ink: #111111;
-    --orbit-muted: #6B645D;
+    --orbit-muted: #4A443E;
     --orbit-border: #111111;
 
     --orbit-orange: #F97316;
@@ -47,7 +47,7 @@
     font-size: clamp(2.5rem, 8vw, 6rem);
     line-height: 1;
     letter-spacing: -0.03em;
-    font-family: "Cabinet Grotesk", "General Sans", system-ui, -apple-system, sans-serif;
+    font-family: var(--font-heading), system-ui, -apple-system, sans-serif;
   }
 
   .text-section-title {
@@ -55,14 +55,14 @@
     font-size: clamp(1.5rem, 3vw, 2.25rem);
     line-height: 1.2;
     letter-spacing: -0.02em;
-    font-family: "Cabinet Grotesk", "General Sans", system-ui, -apple-system, sans-serif;
+    font-family: var(--font-heading), system-ui, -apple-system, sans-serif;
   }
 
   .text-body {
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.6;
-    font-family: "Geist", "Inter", system-ui, -apple-system, sans-serif;
+    font-family: var(--font-body), system-ui, -apple-system, sans-serif;
   }
 
   .text-caption {
@@ -70,7 +70,7 @@
     font-size: 0.875rem;
     line-height: 1.5;
     color: var(--orbit-muted);
-    font-family: "Geist", "Inter", system-ui, -apple-system, sans-serif;
+    font-family: var(--font-body), system-ui, -apple-system, sans-serif;
   }
 
   .text-label {
@@ -79,6 +79,6 @@
     line-height: 1;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    font-family: "Geist", "Inter", system-ui, -apple-system, sans-serif;
+    font-family: var(--font-body), system-ui, -apple-system, sans-serif;
   }
 }

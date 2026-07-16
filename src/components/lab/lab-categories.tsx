@@ -49,7 +49,7 @@ export function LabCategories() {
   return (
     <section className="py-16 md:py-24">
       <div className="space-y-2">
-        <p className="text-label text-orbit-muted">CATEGORIES</p>
+        <p className="text-label">CATEGORIES</p>
         <h2 className="text-section-title">What kind of experiments live here?</h2>
         <p className="text-caption max-w-2xl">Each category represents a different exploration area.</p>
       </div>

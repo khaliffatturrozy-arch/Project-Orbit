@@ -12,7 +12,7 @@ export function AboutHero() {
           <h1 className="text-hero">
             I build products by connecting design, engineering, and iteration.
           </h1>
-          <p className="text-body max-w-3xl text-orbit-muted">
+          <p className="text-body max-w-3xl">
             My work sits between product thinking, interface design, frontend
             development, backend logic, and continuous improvement. I care about
             turning unclear ideas into digital products that can be used, tested,
@@ -41,7 +41,7 @@ export function AboutHero() {
         </div>
 
         <Card variant="flat" className="inline-flex items-center gap-3 p-4">
-          <div className="flex h-10 w-10 items-center justify-center rounded-orbit-sm border-2 border-orbit-border bg-orbit-orange font-heading text-lg font-bold text-orbit-surface">
+          <div className="flex h-10 w-10 items-center justify-center rounded-orbit-sm border-2 border-orbit-border bg-orbit-orange font-heading text-lg font-bold text-orbit-ink">
             KF
           </div>
           <div>

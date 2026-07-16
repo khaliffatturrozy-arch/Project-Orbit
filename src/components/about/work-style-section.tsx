@@ -27,7 +27,7 @@ export function WorkStyleSection() {
   return (
     <section className="py-16 md:py-24">
       <div className="space-y-2">
-        <p className="text-label text-orbit-muted">COLLABORATION</p>
+        <p className="text-label">COLLABORATION</p>
         <h2 className="text-section-title">
           What does it feel like to work with me?
         </h2>
@@ -36,7 +36,7 @@ export function WorkStyleSection() {
         {workStyles.map((item) => (
           <Card key={item.title} variant="flat">
             <h3 className="font-heading text-xl font-bold">{item.title}</h3>
-            <p className="text-body mt-3 text-orbit-muted">{item.description}</p>
+            <p className="text-body mt-3">{item.description}</p>
           </Card>
         ))}
       </div>

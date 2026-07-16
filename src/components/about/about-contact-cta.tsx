@@ -13,9 +13,9 @@ export function AboutContactCTA() {
   return (
     <section id="about-contact" className="py-16 md:py-24">
       <div className="space-y-4">
-        <p className="text-label text-orbit-muted">CONTACT</p>
+        <p className="text-label">CONTACT</p>
         <h2 className="text-section-title">Have an idea worth building?</h2>
-        <p className="text-body max-w-2xl text-orbit-muted">
+        <p className="text-body max-w-2xl">
           Open to freelance work, product collaboration, and opportunities
           where design, engineering, and iteration matter.
         </p>

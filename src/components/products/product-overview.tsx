@@ -8,7 +8,7 @@ type ProductOverviewProps = {
 export function ProductOverview({ product }: ProductOverviewProps) {
   return (
     <section>
-      <p className="text-label mb-6 text-orbit-muted">OVERVIEW</p>
+      <h2 className="text-label mb-6">OVERVIEW</h2>
       <div className="grid gap-6 md:grid-cols-2">
         {product.overview && (
           <Card variant="default" className="md:col-span-2">
@@ -18,13 +18,13 @@ export function ProductOverview({ product }: ProductOverviewProps) {
         )}
         {product.problem && (
           <Card variant="accent">
-            <p className="text-label mb-2 font-semibold text-orbit-orange">Problem</p>
+            <p className="text-label mb-2 font-semibold text-orbit-ink">Problem</p>
             <p className="text-body">{product.problem}</p>
           </Card>
         )}
         {product.solution && (
           <Card variant="accent">
-            <p className="text-label mb-2 font-semibold text-orbit-orange">Solution</p>
+            <p className="text-label mb-2 font-semibold text-orbit-ink">Solution</p>
             <p className="text-body">{product.solution}</p>
           </Card>
         )}

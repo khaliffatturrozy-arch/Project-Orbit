@@ -29,7 +29,7 @@ export function ProcessSection() {
               i === steps.length - 1 && "xl:col-span-4 xl:flex-row xl:items-center xl:gap-6"
             )}
           >
-            <span className="text-label text-orbit-muted shrink-0">{step.number}</span>
+            <span className="text-label shrink-0">{step.number}</span>
             <div>
               <h3 className="font-heading text-xl font-bold">{step.title}</h3>
               <p className="text-caption mt-1">{step.description}</p>

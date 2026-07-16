@@ -8,7 +8,7 @@ type ProductArchitectureProps = {
 export function ProductArchitecture({ architecture }: ProductArchitectureProps) {
   return (
     <section>
-      <p className="text-label mb-6 text-orbit-muted">ARCHITECTURE</p>
+      <h2 className="text-label mb-6">ARCHITECTURE</h2>
       <div className="relative grid gap-0 sm:grid-cols-2">
         {architecture.map((item, i) => (
           <div
@@ -22,7 +22,7 @@ export function ProductArchitecture({ architecture }: ProductArchitectureProps) 
             )}
           >
             <div className="flex items-start gap-4">
-              <span className="text-label mt-0.5 shrink-0 font-bold text-orbit-muted">{String(i + 1).padStart(2, "0")}</span>
+              <span className="text-label mt-0.5 shrink-0 font-bold">{String(i + 1).padStart(2, "0")}</span>
               <div className="space-y-1">
                 <p className="font-heading text-base font-bold">{item.label}</p>
                 <p className="text-caption">{item.description}</p>

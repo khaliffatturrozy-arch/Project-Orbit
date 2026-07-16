@@ -19,7 +19,7 @@ export function Section({
   return (
     <section className={cn("py-16 md:py-24", className)} {...props}>
       <div className="space-y-2">
-        {label && <p className="text-label text-orbit-muted">{label}</p>}
+        {label && <p className="text-label">{label}</p>}
         {title && <h2 className="text-section-title">{title}</h2>}
         {description && <p className="text-caption max-w-2xl">{description}</p>}
       </div>

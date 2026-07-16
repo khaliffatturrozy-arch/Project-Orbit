@@ -57,7 +57,7 @@ export default function OGImage() {
         <div
           style={{
             fontSize: "24px",
-            color: "#6B645D",
+            color: "#4A443E",
             fontWeight: 600,
           }}
         >

@@ -14,7 +14,7 @@ type ProductRoadmapProps = {
 export function ProductRoadmap({ roadmap }: ProductRoadmapProps) {
   return (
     <section>
-      <p className="text-label mb-6 text-orbit-muted">ROADMAP</p>
+      <h2 className="text-label mb-6">ROADMAP</h2>
       <div className="space-y-3">
         {roadmap.map((item) => {
           const config = statusConfig[item.status];

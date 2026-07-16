@@ -73,7 +73,7 @@ export function ProductCard({ product, className }: ProductCardProps) {
         {product.links?.caseStudy && (
           <Link
             href={product.links.caseStudy}
-            className="text-label font-semibold text-orbit-orange underline-offset-2 hover:underline"
+            className="inline-flex items-center min-h-[48px] px-3 py-2 text-label font-semibold text-orbit-ink underline-offset-2 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orbit-border focus-visible:ring-offset-2 focus-visible:ring-offset-orbit-bg rounded-sm"
           >
             View Case Study &rarr;
           </Link>
@@ -83,7 +83,7 @@ export function ProductCard({ product, className }: ProductCardProps) {
             href={product.links.live}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-label font-semibold text-orbit-ink underline-offset-2 hover:underline"
+            className="inline-flex items-center min-h-[48px] px-3 py-2 text-label font-semibold text-orbit-ink underline-offset-2 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orbit-border focus-visible:ring-offset-2 focus-visible:ring-offset-orbit-bg rounded-sm"
           >
             Live Site &rarr;
           </Link>

@@ -35,7 +35,7 @@ export function Footer() {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-body font-medium hover:text-orbit-muted"
+                    className="inline-flex items-center min-h-[48px] px-3 py-2 text-body font-medium underline-offset-2 hover:text-orbit-muted hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orbit-border focus-visible:ring-offset-2 focus-visible:ring-offset-orbit-bg rounded-sm"
                   >
                     {link.label}
                   </Link>
@@ -60,10 +60,10 @@ export function Footer() {
                       href={href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-label font-semibold hover:text-orbit-muted"
-                    >
-                      {link.label}
-                    </Link>
+                       className="inline-flex items-center min-h-[48px] px-3 py-2 text-label font-semibold underline-offset-2 hover:text-orbit-muted hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orbit-border focus-visible:ring-offset-2 focus-visible:ring-offset-orbit-bg rounded-sm"
+                      >
+                        {link.label}
+                      </Link>
                   </li>
                 );
               })}

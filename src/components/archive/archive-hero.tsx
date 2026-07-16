@@ -8,7 +8,7 @@ export function ArchiveHero() {
   return (
     <section className="py-16 md:py-24">
       <div className="space-y-2">
-        <p className="text-label text-orbit-muted">ARCHIVE</p>
+        <p className="text-label">ARCHIVE</p>
         <h1 className="text-section-title">
           Archive of smaller works, older builds, and explorations.
         </h1>

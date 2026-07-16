@@ -31,7 +31,7 @@ export function JourneyTimeline() {
   return (
     <section className="py-16 md:py-24">
       <div className="space-y-2">
-        <p className="text-label text-orbit-muted">JOURNEY</p>
+        <p className="text-label">JOURNEY</p>
         <h2 className="text-section-title">Path so far.</h2>
       </div>
       <div className="mt-8 grid gap-4 md:grid-cols-4">
@@ -41,7 +41,7 @@ export function JourneyTimeline() {
               <span className="flex h-8 w-8 items-center justify-center rounded-orbit-sm border-2 border-orbit-border bg-orbit-ink font-heading text-sm font-bold text-orbit-surface">
                 {index + 1}
               </span>
-              <span className="text-label font-bold text-orbit-orange">
+              <span className="text-label font-bold text-orbit-ink">
                 {item.year}
               </span>
             </div>

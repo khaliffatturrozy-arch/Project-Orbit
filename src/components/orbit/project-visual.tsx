@@ -62,7 +62,7 @@ export function ProjectVisual({
             )}
             aria-hidden="true"
           />
-          <span className="text-caption text-[10px]">{status}</span>
+          <span className="text-caption text-[10px] text-orbit-ink">{status}</span>
         </div>
 
         {progress !== undefined && (
@@ -81,14 +81,14 @@ export function ProjectVisual({
               />
             </div>
             <div className="flex items-center justify-between">
-              <span className="text-caption text-[10px]">Progress</span>
-              <span className="text-caption text-[10px] font-semibold">{progress}%</span>
+              <span className="text-caption text-[10px] text-orbit-ink">Progress</span>
+              <span className="text-caption text-[10px] font-semibold text-orbit-ink">{progress}%</span>
             </div>
           </div>
         )}
 
         <div className="mt-auto flex items-center justify-center border-t border-dashed border-orbit-border/30 pt-3 text-center">
-          <span className="text-caption text-[10px] leading-relaxed text-orbit-muted">
+          <span className="text-caption text-[10px] leading-relaxed text-orbit-ink">
             Product preview not yet available
           </span>
         </div>

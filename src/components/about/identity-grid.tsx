@@ -27,14 +27,14 @@ export function IdentityGrid() {
   return (
     <section className="py-16 md:py-24">
       <div className="space-y-2">
-        <p className="text-label text-orbit-muted">IDENTITY</p>
+        <p className="text-label">IDENTITY</p>
         <h2 className="text-section-title">How I approach product work.</h2>
       </div>
       <div className="mt-8 grid gap-6 sm:grid-cols-2">
         {identities.map((item) => (
           <Card key={item.title} variant="flat">
             <h3 className="font-heading text-xl font-bold">{item.title}</h3>
-            <p className="text-body mt-3 text-orbit-muted">{item.description}</p>
+            <p className="text-body mt-3">{item.description}</p>
           </Card>
         ))}
       </div>

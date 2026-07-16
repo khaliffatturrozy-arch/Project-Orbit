@@ -8,7 +8,7 @@ type ProductFeatureListProps = {
 export function ProductFeatureList({ features }: ProductFeatureListProps) {
   return (
     <section>
-      <p className="text-label mb-6 text-orbit-muted">FEATURES</p>
+      <h2 className="text-label mb-6">FEATURES</h2>
       <div className="grid gap-3 sm:grid-cols-2">
         {features.map((feature) => (
           <Card key={feature.title} variant="flat" className="flex flex-col gap-1.5">
